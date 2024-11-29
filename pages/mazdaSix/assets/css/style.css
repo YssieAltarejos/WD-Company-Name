@@ -111,24 +111,3 @@ nav li:first-child {
     width: 100%;
   }
 }
-
-body {
-  width: 100%;
-  min-height: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.row {
-  width: 80%;
-  max-width: 1170px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 50px;
-  overflow-x: hidden;
-  padding: 5rem;
-}
-
-.row imgwrapper {
-  
-}
