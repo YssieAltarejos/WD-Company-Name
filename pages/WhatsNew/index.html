@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                /></svg></a>
+          </li>
+          <li><a href="./pages/vehicles/index.html">vehicles</a></li>
+          <li><a href="./pages/whatsNew/index.html">what's new</a></li>
+          <li><a href="./pages/aboutUs/index.html">about</a></li>
+          <li><a href="./pages/contactUs/index.html">contact us</a></li>
+        </ul>
+  
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="../../assets/img/logo-white.png" width="130" alt=""
+            /></a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="./pages/vehicles/index.html">vehicles</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="./pages/whatsNew/index.html">what's new</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="./pages/aboutUs/index.html">about</a>
+          </li>
+          <li class="hideOnMobile">
+            <a href="./pages/contactUs/index.html">contact us</a>
+          </li>
+          <li class="menubtn" onclick="showSidebar()">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#e8eaed">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                /></svg></a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="contact">
+        <img class="clogo" src="./assets/img/logo-b-06.png" alt="" />
+    
+        <div class="links">
+          <a href="./index.html">
+            <p>Home</p>
+          </a>
+          <a href="./pages/About/index.html">
+            <p>About</p>
+          </a>
+          <a href="./pages/Portfolio/index.html">
+            <p>Portfolio</p>
+          </a>
+        </div>
+        <div class="socmed">
+          <a target="_blank" href="https://www.instagram.com/venmaer_"
+            ><img src="./assets/img/ig.png"
+          /></a>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100071652847742"
+            ><img src="./assets/img/fb.png"
+          /></a>
+          <a href="mailto:yssiealtarejos@gmail.com"
+            ><img src="./assets/img/email.png"
+          /></a>
+        </div>
+      </section>
+    
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

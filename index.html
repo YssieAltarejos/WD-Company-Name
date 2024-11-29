@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mazda</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
-    <header class="header">
-        <a target="_blank" href="#"><img class="logo" src="./assets/img/logo-white.png" alt=""></a>
-        <nav>
-          <a class="btn" href="./pages/Vehicles/index.html">
-            <p>Vehicles</p>
-          </a>
-          <a class="btn" href="./pages/WhatsNew/index.html">
-            <p>What's New</p>
-          </a>
-          <a class="btn" href="./pages/CompanyServices/index.html">
-            <p>company services</p>
-          </a>
-          <a class="btn" href="./pages/AboutUs/index.html">
-            <p>About Us</p>
-          </a>
-        </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazda</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="./pages/vehicles/index.html">vehicles</a></li>
+      <li><a href="./pages/whatsNew/index.html">what's new</a></li>
+      <li><a href="./pages/aboutUs/index.html">about</a></li>
+      <li><a href="./pages/contactUs/index.html">contact us</a></li>
+    </ul>
 
-    <section class="hero">
-      <img class="car" src="./assets/img/MX-5 RF.png" alt="">
-      <div class="hero-txt">MX-5 RF</div>
-    </section>
+    <ul>
+      <li><a href="#"><img src="./assets/img/logo-white.png" width="130" alt=""></a></li>
+      <li class="hideOnMobile"><a href="./pages/vehicles/index.html">vehicles</a></li>
+      <li class="hideOnMobile"><a href="./pages/whatsNew/index.html">what's new</a></li>
+      <li class="hideOnMobile"><a href="./pages/aboutUs/index.html">about</a></li>
+      <li class="hideOnMobile"><a href="./pages/contactUs/index.html">contact us</a></li>
+      <li class="menubtn" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
 
-    <section class="footer">
-      <a target="_blank" href="#"><img class="logo" src="./assets/img/logo-white.png" alt=""></a>
+  <section class="home" id="home">
+    <img class="car" src="./assets/img/MX-5 RF.png" alt="">
+    <h1>mx-5</h1>
+  </section>
+  <section class="home2">
+    <h2>Awakening the senses</h2>
+    <p>From the moment you start a Mazda, you will feel the instant connection and bond with the car. This is Jinba Ittai. Strengthening this bond is our goal. This direct and instantaneous feeling of input to movement is what sets our cars apart from the rest.</p>
+  </section>
 
-      <div class="links">
-        <a href="./index.html">
-          <p>Home</p>
-        </a>
-        <a href="./pages/About/index.html">
-          <p>About</p>
-        </a>
-        <a href="./pages/Portfolio/index.html">
-          <p>Portfolio</p>
-        </a>
-      </div>
-      <div class="socmed">
-        <a target="_blank" href="https://www.instagram.com/venmaer_"
-          ><img src="./assets/img/ig.png"
-        /></a>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100071652847742"
-          ><img src="./assets/img/fb.png"
-        /></a>
-        <a href="mailto:yssiealtarejos@gmail.com"
-          ><img src="./assets/img/email.png"
-        /></a>
-      </div>
-    </section>
-  </body>
+
+  <section id="contact">
+    <img class="clogo" src="./assets/img/logo-b-06.png" alt="" />
+
+    <div class="links">
+      <a href="./index.html">
+        <p>Home</p>
+      </a>
+      <a href="./pages/About/index.html">
+        <p>About</p>
+      </a>
+      <a href="./pages/Portfolio/index.html">
+        <p>Portfolio</p>
+      </a>
+    </div>
+    <div class="socmed">
+      <a target="_blank" href="https://www.instagram.com/venmaer_"
+        ><img src="./assets/img/ig.png"
+      /></a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=100071652847742"
+        ><img src="./assets/img/fb.png"
+      /></a>
+      <a href="mailto:yssiealtarejos@gmail.com"
+        ><img src="./assets/img/email.png"
+      /></a>
+    </div>
+  </section>
+
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+</script>
+<script src="./assets/js/script.js"></script>
+</body>
 </html>
