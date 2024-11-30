@@ -58,19 +58,15 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+This project is a responsive website dedicated to showcasing Mazda vehicles. The website provides detailed information about different Mazda models, company history, and additional features like contact options and quotes for potential buyers. It also highlights Mazda's engineering excellence and design philosophy.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - MultiPage Website/Single Page Website
-- 
-- MultiPage Website/Single Page Website
-
+- Responsive Sidebar
+- Redirecting Links
+- Cards
 
 ### Technology
 <!-- TODO: List of Technology Used -->
