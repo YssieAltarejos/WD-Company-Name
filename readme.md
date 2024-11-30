@@ -118,3 +118,6 @@ WD-ProjectName
 | Title | Purpose | Link |
 |-|-|-|
 | Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Hero Background | Video playing in the background with text in front. | https://youtu.be/znqUwx0b0HI?si=thluL3aImPLXSbz8 |
+| Responsive Navbar | Responsive navbar with sidebar. | https://youtu.be/U8smiWQ8Seg?si=27WnYYV8A35Lnf41 |
+| BreadCrumb | To indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS. | https://getbootstrap.com/docs/5.3/components/breadcrumb/#example |
