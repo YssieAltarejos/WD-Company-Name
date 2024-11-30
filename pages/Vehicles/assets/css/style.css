@@ -118,11 +118,12 @@ a {
     flex-wrap: wrap;
     margin-top: 100px;
     align-items: center;
+    height: 80dvh;
   }
 
   .card {
     width: 280px;
-    height: 70vh;
+    height: 60vh;
     background-color: aliceblue;
     border-radius: 8px;
     overflow: hidden;

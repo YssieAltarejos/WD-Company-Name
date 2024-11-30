@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
   </head>
   <body>
     <nav>
@@ -22,131 +27,102 @@
                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
               /></svg></a>
         </li>
-        <li><a href="./pages/vehicles/index.html">vehicles</a></li>
-        <li><a href="./pages/whatsNew/index.html">what's new</a></li>
-        <li><a href="./pages/aboutUs/index.html">about</a></li>
-        <li><a href="./pages/contactUs/index.html">contact us</a></li>
+        <li><a href="../vehicles/index.html">vehicles</a></li>
+        <li><a href="../aboutUs/index.html">about</a></li>
+        <li><a href="#">contact us</a></li>
       </ul>
 
       <ul>
         <li>
-          <a href="#"
-            ><img src="./assets/img/logo-white.png" width="130" alt=""
+          <a href="../../index.html"
+            ><img src="../../assets/img/logo-white.png" width="130" alt=""
           /></a>
         </li>
         <li class="hideOnMobile">
-          <a href="./pages/vehicles/index.html">vehicles</a>
+          <a href="../vehicles/index.html">vehicles</a>
         </li>
         <li class="hideOnMobile">
-          <a href="./pages/whatsNew/index.html">what's new</a>
+          <a href="../aboutUs/index.html">about</a>
         </li>
         <li class="hideOnMobile">
-          <a href="./pages/aboutUs/index.html">about</a>
-        </li>
-        <li class="hideOnMobile">
-          <a href="./pages/contactUs/index.html">contact us</a>
+          <a href="#">contact us</a>
         </li>
         <li class="menubtn" onclick="showSidebar()">
-          <a href="#"
-            ><svg
+          <a href="#"><svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
               viewBox="0 -960 960 960"
               width="24px"
-              fill="#e8eaed">
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              fill="#e8eaed"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
               /></svg></a>
         </li>
       </ul>
     </nav>
-    <section class="quotation-form">
-      <h1>Get a Quotation</h1>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Full Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your full name"
-            required
-          />
-        </div>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
+    <section class="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions or need a quote? We're here to help!</p>
+        <div class="contact-options">
+          <div class="contact-box email">
+            <h3>Contact Through Email</h3>
+            <form action="mailto:example@example.com" method="post" enctype="text/plain">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-        <div class="form-group">
-          <label for="phone">Phone Number</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="Enter your phone number"
-            required
-          />
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+              
+              <button type="submit" class="contact-button">Send Email</button>
+            </form>
+          </div>
+          <div class="contact-box quote">
+            <h3>Get A Quotation</h3>
+            <form>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+              
+              <label for="quote-message">Details</label>
+              <textarea id="quote-message" name="quote-message" rows="4" placeholder="Provide details for your quote" required></textarea>
+              
+              <button type="submit" class="contact-button">Request Quote</button>
+            </form>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label for="car-model">Car Model</label>
-          <select id="car-model" name="car-model" required>
-            <option value="">Select a car model</option>
-            <option value="mazda-mx5">Mazda MX-5</option>
-            <option value="mazda-cx30">Mazda CX-30</option>
-            <option value="mazda-cx5">Mazda CX-5</option>
-            <option value="mazda-cx90">Mazda CX-90</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="details">Additional Details</label>
-          <textarea
-            id="details"
-            name="details"
-            rows="4"
-            placeholder="Enter additional details or specifications"
-          ></textarea>
-        </div>
-
-        <button type="submit" class="btn">Get Quotation</button>
-      </form>
+      </div>
     </section>
 
-    <section id="contact">
-        <img class="clogo" src="./assets/img/logo-b-06.png" alt="" />
-    
-        <div class="links">
-          <a href="./index.html">
-            <p>Home</p>
-          </a>
-          <a href="./pages/About/index.html">
-            <p>About</p>
-          </a>
-          <a href="./pages/Portfolio/index.html">
-            <p>Portfolio</p>
-          </a>
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
         </div>
-        <div class="socmed">
-          <a target="_blank" href="https://www.instagram.com/venmaer_"
-            ><img src="./assets/img/ig.png"
-          /></a>
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100071652847742"
-            ><img src="./assets/img/fb.png"
-          /></a>
-          <a href="mailto:yssiealtarejos@gmail.com"
-            ><img src="./assets/img/email.png"
-          /></a>
+        <div class="footerNav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="../vehicles/index.html">Vehicles</a></li>
+            <li><a href="../aboutUs/index.html">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
         </div>
-      </section>
-    
+      </div>
+      <div class="footerBottom">
+        <div><a href="../../index.html"><img class="flogo" src="./assets/img/LOGO.png" alt=""></a></div>
+        <p>
+          Copyright © 2010-2024 MAZDA Philippines. All rights reserved.<span class="designer">YAltarejos</span>
+        </p>
+      </div>
+    </footer>
+
     <script>
       function showSidebar(){
         const sidebar = document.querySelector('.sidebar')
