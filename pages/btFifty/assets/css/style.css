@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   min-height: 100dvh;
   background-color: rgb(27, 24, 24);
@@ -15,6 +25,8 @@ body {
 nav {
   background-color: #000;
   box-shadow: #00000069;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 nav ul {
@@ -23,6 +35,9 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 
 nav li {
@@ -85,87 +100,139 @@ nav li:first-child {
     display: block;
   }
 
-.home h1 {
+  .home h1 {
     width: 90%;
-}
+  }
 
-.car {
+  .car {
     width: 90%;
-}
+  }
 }
 
 @media (max-width: 400px) {
-    .sidebar {
-        width: 100%;
-    }
-    
-    .home h1 {
-        width: 90%;
-    }
+  .sidebar {
+    width: 100%;
+  }
+
+  .home h1 {
+    width: 90%;
+  }
 
   .car {
     width: 100%;
   }
 }
 
-section {
+.breadcrumb {
+  padding: 20px 30px;
+  background-color: #161616;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  gap: .5rem;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+  color: #aaa;
+}
+
+.breadcrumb span {
+  color: rgb(201, 43, 43);
+}
+
+
+.product {
+  padding: 2rem;
+  background-color: #161616;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-}
-
-@media (max-width: 1000px) {
-  section {
-    padding: 100px 50px;
-  }
-}
-@media (max-width: 600px) {
-  section {
-    padding: 120px 30px;
-  }
-}
-
-.hero {
-  position: relative;
   justify-content: center;
-  min-height: 100vh;
+}
+
+.product-info {
+  max-width: 600px;
+}
+
+.product-subheading {
+  font-size: 1.2rem;
+  color: rgb(201, 43, 43);
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin: 0 0 16px;
+  color: rgb(201, 43, 43);
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  p {
+    color: #aaa;
+  }
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
   color: #fff;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
-.hero video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.hero h1 {
-  margin-bottom: 15px;
-  font-size: 65px;
-  text-transform: uppercase;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-}
-
-.hero a.heroBtn {
-  padding: 15px 35px;
-  background: #ffffff62;
-  border-radius: 50px;
+.quote-button {
+  padding: 10px 20px;
+  background-color: rgb(201, 43, 43);
   color: #fff;
-  text-transform: uppercase;
-  transition: all .5s;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
   text-decoration: none;
-  top: 80%;
-  font-size: 20px;
 }
 
-.hero a.heroBtn:hover {
-  background: #ffffffb7;
-  color: #272727;
+.quote-button:hover {
+  background-color: rgba(201, 43, 43, 0.699);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 800px) {
+  .product-detail {
+    grid-template-columns: 1fr; /* Stacks the image and text vertically */
+  }
+  .product-image,
+  .product-text {
+    justify-self: center;
+  }
 }
 
 footer{
@@ -173,7 +240,7 @@ footer{
 }
 .footerContainer{
   width: 100%;
-  padding: 50px 30px 20px ;
+  padding: 50px 20px 10px ;
 }
 .socialIcons{
   display: flex;
@@ -191,7 +258,6 @@ footer{
   color: black;
   opacity: 0,9;
 }
-/* Hover affect on social media icon */
 .socialIcons a:hover{
   background-color: rgb(201, 43, 43);
   transition: 0.5s;
@@ -229,7 +295,7 @@ footer{
 
 .footerBottom{
   background-color: #000;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
 }
 .footerBottom p{

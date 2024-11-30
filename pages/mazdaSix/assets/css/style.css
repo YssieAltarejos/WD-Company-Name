@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   min-height: 100dvh;
   background-color: rgb(27, 24, 24);
@@ -19,6 +25,8 @@ body {
 nav {
   background-color: #000;
   box-shadow: #00000069;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 nav ul {
@@ -27,6 +35,9 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+
 }
 
 nav li {
@@ -109,5 +120,202 @@ nav li:first-child {
 
   .car {
     width: 100%;
+  }
+}
+
+.breadcrumb {
+  padding: 20px 30px;
+  background-color: #161616;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  gap: .5rem;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+  color: #aaa;
+}
+
+.breadcrumb span {
+  color: rgb(201, 43, 43);
+}
+
+
+.product {
+  padding: 2rem;
+  background-color: #161616;
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: flex-start;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-info {
+  max-width: 600px;
+}
+
+.product-subheading {
+  font-size: 1.2rem;
+  color: rgb(201, 43, 43);
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin: 0 0 16px;
+  color: rgb(201, 43, 43);
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.quote-button {
+  padding: 10px 20px;
+  background-color: rgb(201, 43, 43);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.quote-button:hover {
+  background-color: rgba(201, 43, 43, 0.699);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 800px) {
+  .product-detail {
+    grid-template-columns: 1fr; /* Stacks the image and text vertically */
+  }
+  .product-image,
+  .product-text {
+    justify-self: center;
+  }
+}
+
+footer{
+  background-color: #000;
+}
+.footerContainer{
+  width: 100%;
+  padding: 50px 20px 10px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 1.2em;
+  color: black;
+  opacity: 0,9;
+}
+.socialIcons a:hover{
+  background-color: rgb(201, 43, 43);
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+
+.flogo {
+  width: 8rem;
+  height: auto;
+  padding: 20px;
+}
+
+.footerBottom{
+  background-color: #000;
+  padding: 15px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
   }
 }
